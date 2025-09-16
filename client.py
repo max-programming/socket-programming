@@ -37,7 +37,9 @@ def main():
     print("Type messages and press Enter. Type 'quit' to exit.\n")
 
     thread = threading.Thread(
-        target=receive_messages, args=(client_socket,), daemon=True
+        target=receive_messages,
+        args=(client_socket,),
+        daemon=True,
     )
     thread.start()
     send_messages(client_socket)
