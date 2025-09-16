@@ -36,9 +36,10 @@ def main():
     print(f"Connected to chat server {HOST}:{PORT}")
     print("Type messages and press Enter. Type 'quit' to exit.\n")
 
-    threading.Thread(
+    thread = threading.Thread(
         target=receive_messages, args=(client_socket,), daemon=True
-    ).start()
+    )
+    thread.start()
     send_messages(client_socket)
 
 
