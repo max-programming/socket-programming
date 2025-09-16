@@ -36,7 +36,7 @@ uv sync
 Start the chat server:
 
 ```bash
-python server.py
+uv run server.py
 ```
 
 The server will listen on `127.0.0.1:5000` by default.
@@ -46,7 +46,7 @@ The server will listen on `127.0.0.1:5000` by default.
 In separate terminal windows, start one or more clients:
 
 ```bash
-python client.py
+uv run client.py
 ```
 
 Each client will be assigned a random username and can send messages to all other connected clients.
