@@ -32,7 +32,11 @@ uv sync
 3. Activate the virtual environment:
 
 ```bash
+# On Linux/macOS:
 source .venv/bin/activate
+
+# On Windows:
+.venv\Scripts\activate
 ```
 
 ## Usage
