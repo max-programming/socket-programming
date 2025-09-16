@@ -29,6 +29,12 @@ cd socket-programming
 uv sync
 ```
 
+3. Activate the virtual environment:
+
+```bash
+source .venv/bin/activate
+```
+
 ## Usage
 
 ### Running the Server
